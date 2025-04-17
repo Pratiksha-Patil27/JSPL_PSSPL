@@ -1,0 +1,37 @@
+[
+	{
+	    "username" : "admin",
+		"password" : "admin123"
+		
+	},
+  {
+	"username" : "6001",
+	"password" : "admin123"
+	
+},
+	{
+		"username" : "admin",
+		"password" : "tELE@6001"
+	},
+	{
+		"username" : " ",
+		"password" : "tELE@6001"
+	},
+	
+	{
+		"username" : "6001",
+		"password" : " "
+	},
+	{
+		"username" : " ",
+		"password" : " "
+	},
+	{
+			"username" : "6001",
+			"password" : "tELE@6001"
+		}
+	
+	
+	
+	
+]

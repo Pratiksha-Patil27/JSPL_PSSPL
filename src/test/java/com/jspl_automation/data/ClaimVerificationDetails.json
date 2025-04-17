@@ -1,0 +1,16 @@
+[
+	{
+		"qty" : "2",
+		"status" : "Approve",
+		"remark" : "Claim Approved"	
+	},	
+	{
+		"qty" : "3",
+		"status" : "Reject",
+		"reason" : "Other brand Picture uploaded",
+		"remark" : "Claim Reject"	
+   }
+		
+
+	
+]

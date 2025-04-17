@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Outbound Task(failed)" verbose="0">
+    <classes>
+      <class name="com.jspl.OutboundTaskTest.OutBoundTaskTest">
+        <methods>
+          <include name="openOutBoundTaskMenu"/>
+          <include name="executeTelecallingTestCases"/>
+          <include name="endTestMethod"/>
+          <include name="generateReport"/>
+          <include name="Login"/>
+          <include name="tearDown"/>
+          <include name="startTestMethod"/>
+        </methods>
+      </class> <!-- com.jspl.OutboundTaskTest.OutBoundTaskTest -->
+    </classes>
+  </test> <!-- Outbound Task(failed) -->
+</suite> <!-- Failed suite [Suite] -->
