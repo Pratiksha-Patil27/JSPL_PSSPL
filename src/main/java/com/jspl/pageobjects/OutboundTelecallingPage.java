@@ -595,8 +595,7 @@ public class OutboundTelecallingPage extends BasePage {
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			
-			e.printStackTrace();
+		
 		}
 		List<WebElement> callElements = callButtons;
 		for (WebElement callElement : callElements) {
@@ -612,8 +611,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyCloseTaskLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(closeTaskLable);
+		
 		try {
+			waitVisibilityOf(closeTaskLable);
 			displayStatus = closeTaskLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -632,8 +632,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyCloseTaskRemarkWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		WaitVisibliltyOfLocated(By.xpath("//div[text()=\"Please Enter Remark\"]"));
+		
 		try {
+			WaitVisibliltyOfLocated(By.xpath("//div[text()=\"Please Enter Remark\"]"));
 			displayStatus = closeTaskRemarkWarningMsg.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -660,8 +661,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyRescheduleLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(rescheduleCallLable);
+		
 		try {
+			waitVisibilityOf(rescheduleCallLable);
 			displayStatus = rescheduleCallLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -678,8 +680,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyRescheduleCallStatusWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		WaitVisibliltyOfLocated(By.xpath("//div[text()=\"Please Select Schedule Status\"]"));
+		
 		try {
+			WaitVisibliltyOfLocated(By.xpath("//div[text()=\"Please Select Schedule Status\"]"));
 			displayStatus = rescheduleCallStatusWarningMsg.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -721,8 +724,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyCatalogOptionsDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(productCatalog);
+		
 		try {
+			waitVisibilityOf(productCatalog);
 			displayStatus = productCatalog.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -740,8 +744,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyProductCatalogLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(productCatalogueLable);
+		
 		try {
+			waitVisibilityOf(productCatalogueLable);
 			displayStatus = productCatalogueLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -757,8 +762,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyPointsOptionsDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(pointsBtnDropdown);
+		
 		try {
+			waitVisibilityOf(pointsBtnDropdown);
 			displayStatus = pointsBtnDropdown.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -775,8 +781,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyPointsLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(pointsMenuLable);
+		
 		try {
+			waitVisibilityOf(pointsMenuLable);
 			displayStatus = pointsMenuLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -789,15 +796,16 @@ public class OutboundTelecallingPage extends BasePage {
 		try {
 			click(pointsMenuCross);
 		} catch (Exception e) {
-			e.printStackTrace();
+			
 		}
 	}
 	
 	public boolean verifyEscalationListMenuDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(escalationListMenu);
+		
 		try {
+			waitVisibilityOf(escalationListMenu);
 			displayStatus = escalationListMenu.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -814,8 +822,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyEscalationListMenuLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(escalationListMenuLable);
+		
 		try {
+			waitVisibilityOf(escalationListMenuLable);
 			displayStatus = escalationListMenuLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -828,7 +837,7 @@ public class OutboundTelecallingPage extends BasePage {
 		try {
 			click(escalationListMenuCrossIcon);
 		} catch (Exception e) {
-			e.printStackTrace();
+			
 		}
 	}
 	public void clickOnAddEscalationMenu()
@@ -836,15 +845,16 @@ public class OutboundTelecallingPage extends BasePage {
 		try {
 		click(addEscalationMenu);
 		} catch (Exception e) {
-			e.printStackTrace();
+
 		}
 	}
 	
 	public boolean verifyAddEscalationMenuLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addEscalationMenuLable);
+		
 		try {
+			waitVisibilityOf(addEscalationMenuLable);
 			displayStatus = addEscalationMenuLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -857,15 +867,16 @@ public class OutboundTelecallingPage extends BasePage {
 		try {
 			click(addEscalationMenuSubmitButton);
 		} catch (Exception e) {
-			e.printStackTrace();
+			
 		}
 	}
 	
 	public boolean verifyAddEscalationSelectTagWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addEscalationSelectTagWarningMsg);
+		
 		try {
+			waitVisibilityOf(addEscalationSelectTagWarningMsg);
 			displayStatus = addEscalationSelectTagWarningMsg.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -878,7 +889,6 @@ public class OutboundTelecallingPage extends BasePage {
 	{ try {
 		click(addEscalationMenuCancelBtn);
 	} catch (Exception e) {
-		//e.printStackTrace();
 	}
 	}
 	
@@ -886,15 +896,15 @@ public class OutboundTelecallingPage extends BasePage {
 		try {
 			click(addEscalationMenuCrossIcon);
 		} catch (Exception e) {
-			//e.printStackTrace();
 		}
 	}
 	
 	public boolean verifyRedemptionHistoryMenuDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(redemptionHistoryMenu);
+		
 		try {
+			waitVisibilityOf(redemptionHistoryMenu);
 			displayStatus = redemptionHistoryMenu.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -910,8 +920,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyRedemptionHistoryMenuLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(redemptionHistoryMenuLable);
+		
 		try {
+			waitVisibilityOf(redemptionHistoryMenuLable);
 			displayStatus = redemptionHistoryMenuLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -924,7 +935,7 @@ public class OutboundTelecallingPage extends BasePage {
 	{ try {
 		click(redemptionHistoryCrossIcon);
 	} catch (Exception e) {
-		e.printStackTrace();
+		
 	}
 	}
 	
@@ -936,8 +947,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddRedemptionMenuLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addRedemptionMenuLable);
+		
 		try {
+			waitVisibilityOf(addRedemptionMenuLable);
 			displayStatus = addRedemptionMenuLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -955,8 +967,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddRedemptionGiftFieldWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addRedemptionGiftFieldWarningMsg);
+		
 		try {
+			waitVisibilityOf(addRedemptionGiftFieldWarningMsg);
 			displayStatus = addRedemptionGiftFieldWarningMsg.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -974,15 +987,16 @@ public class OutboundTelecallingPage extends BasePage {
 		try {
 			click(addRedemptionCrossIcon);
 		} catch (Exception e) {
-			e.printStackTrace();
+			
 		}
 	}
 
 	public boolean verifyAddClaimMenuDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addClaimMenu);
+		
 		try {
+			waitVisibilityOf(addClaimMenu);
 			displayStatus = addClaimMenu.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -999,8 +1013,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddClaimMenuLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addClaimMenuLable);
+		
 		try {
+			waitVisibilityOf(addClaimMenuLable);
 			displayStatus = addClaimMenuLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1018,8 +1033,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddClaimDealerFieldWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addClaimDealerFieldWarningMsg);
+		
 		try {
+			waitVisibilityOf(addClaimDealerFieldWarningMsg);
 			displayStatus = addClaimDealerFieldWarningMsg.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1037,7 +1053,7 @@ public class OutboundTelecallingPage extends BasePage {
 		try {
 			click(addClaimCrossIcon);
 		} catch (Exception e) {
-			//e.printStackTrace();
+			
 		}
 	}
 	
@@ -1049,8 +1065,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyClaimStatusMenuLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(claimStatusMenuLable);
+		
 		try {
+			waitVisibilityOf(claimStatusMenuLable);
 			displayStatus = claimStatusMenuLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1063,7 +1080,7 @@ public class OutboundTelecallingPage extends BasePage {
 		try {
 			click(claimStatusCrossIcon);
 		} catch (Exception e) {
-			//e.printStackTrace();
+			
 		}
 	}
 	
@@ -1075,8 +1092,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyVerifyClaimMenuLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(verifyClaimMenuLable);
+		
 		try {
+			waitVisibilityOf(verifyClaimMenuLable);
 			displayStatus = verifyClaimMenuLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1101,8 +1119,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddEscalationSuccessPopUpDisplay()
 	{
 		boolean displayStatus = false;
-		WaitVisibliltyOfLocated(By.id("swal2-title"));
+		
 		try {
+			WaitVisibliltyOfLocated(By.id("swal2-title"));
 			displayStatus = addEscalationSuccessPopUp.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1124,8 +1143,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyEscalationListNoRecordsLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(escalationListNoRecordsLable);
+		
 		try {
+			waitVisibilityOf(escalationListNoRecordsLable);
 			displayStatus = escalationListNoRecordsLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1136,8 +1156,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddClaimDealFieldWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addClaimDealFieldWarningMsg);
+		
 		try {
+			waitVisibilityOf(addClaimDealFieldWarningMsg);
 			displayStatus = addClaimDealFieldWarningMsg.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1148,8 +1169,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddClaimCustNameFieldWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addClaimCustNameFieldWarningMsg);
+		
 		try {
+			waitVisibilityOf(addClaimCustNameFieldWarningMsg);
 			displayStatus = addClaimCustNameFieldWarningMsg.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1160,8 +1182,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddClaimCustNumberFieldWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addClaimCustNumberFieldWarningMsg);
+		
 		try {
+			waitVisibilityOf(addClaimCustNumberFieldWarningMsg);
 			displayStatus = addClaimCustNumberFieldWarningMsg.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1172,8 +1195,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddClaimCustAddressFieldWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addClaimCustAddressFieldWarningMsg);
+		
 		try {
+			waitVisibilityOf(addClaimCustAddressFieldWarningMsg);
 			displayStatus = addClaimCustAddressFieldWarningMsg.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1184,8 +1208,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddClaimProductFieldWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addClaimProductFieldWarningMsg);
+		
 		try {
+			waitVisibilityOf(addClaimProductFieldWarningMsg);
 			displayStatus = addClaimProductFieldWarningMsg.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1196,8 +1221,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddClaimPointsFieldWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addClaimPointsFieldWarningMsg);
+		
 		try {
+			waitVisibilityOf(addClaimPointsFieldWarningMsg);
 			displayStatus = addClaimPointsFieldWarningMsg.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1208,8 +1234,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddClaimQtyFieldWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addClaimQtyFieldWarningMsg);
+		
 		try {
+			waitVisibilityOf(addClaimQtyFieldWarningMsg);
 			displayStatus = addClaimQtyFieldWarningMsg.isDisplayed();
 		} catch (Exception e) {
 			displayStatus = false;
@@ -1225,8 +1252,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddClaimErrorToastForPlusBtnDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addClaimErrorToastForPlusBtn);
+		
 		try {
+			waitVisibilityOf(addClaimErrorToastForPlusBtn);
 			displayStatus = addClaimErrorToastForPlusBtn.isDisplayed();
 		} catch (Exception e) {
 			displayStatus = false;
@@ -1248,8 +1276,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddClaimErrorToastForDeleteBtnDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addClaimErrorToastForDeleteBtn);
+		
 		try {
+			waitVisibilityOf(addClaimErrorToastForDeleteBtn);
 			displayStatus = addClaimErrorToastForDeleteBtn.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1492,8 +1521,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyClaimStatusPDFLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(claimStatusPDFLable);
+		
 		try {
+			waitVisibilityOf(claimStatusPDFLable);
 			displayStatus = claimStatusPDFLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1505,7 +1535,6 @@ public class OutboundTelecallingPage extends BasePage {
 		try {
 			click(claimStatusPDFCrossIcon);
 		} catch (Exception e) {
-			e.printStackTrace();
 		}
 	}
 	
@@ -1518,8 +1547,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyClaimStatusNoRecordsLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(claimStatusNoRecordsLable);
+		
 		try {
+			waitVisibilityOf(claimStatusNoRecordsLable);
 			displayStatus = claimStatusNoRecordsLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1535,8 +1565,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyClaimStatusDateFilterLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(claimStatusDateFilterLable);
+		
 		try {
+			waitVisibilityOf(claimStatusDateFilterLable);
 			displayStatus = claimStatusDateFilterLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1548,15 +1579,16 @@ public class OutboundTelecallingPage extends BasePage {
 		try {
 			click(claimStatusDateFilterCrossIcon);
 		} catch (Exception e) {
-			e.printStackTrace();
+			
 		}
 	}
 	
 	public boolean verifyAddRedemptionQtyFieldWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(addRedemptionQtyFieldWarningMsg);
+		
 		try {
+			waitVisibilityOf(addRedemptionQtyFieldWarningMsg);
 			displayStatus = addRedemptionQtyFieldWarningMsg.isDisplayed();
 		} catch (Exception e) {
 			displayStatus = false;
@@ -1617,8 +1649,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyAddRedemptionSuccessPopUpDisplay()
 	{
 		boolean displayStatus = false;
-		WaitVisibliltyOfLocated(By.xpath("//h2[contains(text(), 'Submitted Successfully.')]"));
+		
 		try {
+			WaitVisibliltyOfLocated(By.xpath("//h2[contains(text(), 'Submitted Successfully.')]"));
 			displayStatus = addRedemptionSuccsessDialogBox.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1802,8 +1835,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyRedHistoryNoRecordsLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(redemptionHistoryNoRecordsLable);
+		
 		try {
+			waitVisibilityOf(redemptionHistoryNoRecordsLable);
 			displayStatus = redemptionHistoryNoRecordsLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1819,8 +1853,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyRedHistoryDetailsLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(redemptionHistoryDetailsLable);
+		
 		try {
+			waitVisibilityOf(redemptionHistoryDetailsLable);
 			displayStatus = redemptionHistoryDetailsLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1841,8 +1876,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyRedHistoryPdfLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(redemptionHistoryPdfLable);
+		
 		try {
+			waitVisibilityOf(redemptionHistoryPdfLable);
 			displayStatus = redemptionHistoryPdfLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -1864,8 +1900,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyRedHistoryDateFilterLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(redHistoryDateFilterLable);
+		
 		try {
+			waitVisibilityOf(redHistoryDateFilterLable);
 			displayStatus = redHistoryDateFilterLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -2008,8 +2045,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyClosetaskWarningDialogBoxDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(closeTaskWarningDialogMsg);
+		
 		try {
+			waitVisibilityOf(closeTaskWarningDialogMsg);
 			displayStatus = closeTaskWarningDialogMsg.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -2027,8 +2065,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyClaimVerificationLabelDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(claimVerificationLabel);
+		
 		try {
+			waitVisibilityOf(claimVerificationLabel);
 			displayStatus = claimVerificationLabel.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -2044,8 +2083,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyClaimVerificationErrorToastForClaimStatusFieldDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(claimVerificationErrorToastMsgForStatus);
+		
 		try {
+			waitVisibilityOf(claimVerificationErrorToastMsgForStatus);
 			displayStatus = claimVerificationErrorToastMsgForStatus.isDisplayed();
 		} catch (Exception e) {
 			displayStatus = false;
@@ -2065,7 +2105,7 @@ public class OutboundTelecallingPage extends BasePage {
 		click(claimVerificationCancelBtn);
 		}catch(Exception e)
         {
-        	//e.printStackTrace();
+        	
         }
 	}
 	
@@ -2076,7 +2116,7 @@ public class OutboundTelecallingPage extends BasePage {
 		click(claimVerificationCrossIcon);
 		}catch(Exception e)
         {
-        	//e.printStackTrace();
+        	
         }
 	}
 	
@@ -2141,8 +2181,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyClaimVerificationErrorToastForClaimMaxQtyDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(claimVerificationErrorToastMsgForMaxClaimedQty);
+		
 		try {
+			waitVisibilityOf(claimVerificationErrorToastMsgForMaxClaimedQty);
 			displayStatus = claimVerificationErrorToastMsgForMaxClaimedQty.isDisplayed();
 		} catch (Exception e) {
 			displayStatus = false;
@@ -2346,8 +2387,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyClaimVerificationErrorToastForReasonFieldDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(claimVerificationErrorToastMsgForRejectReasonField);
+		
 		try {
+			waitVisibilityOf(claimVerificationErrorToastMsgForRejectReasonField);
 			displayStatus = claimVerificationErrorToastMsgForRejectReasonField.isDisplayed();
 		} catch (Exception e) {
 			displayStatus = false;
@@ -2389,9 +2431,9 @@ public class OutboundTelecallingPage extends BasePage {
 		return driver.findElement(customerMobileNo).getText();
 	}
 	
-	public String getClaimVefDetailsClaimStatus(int rowIndex)
+	public String getClaimVefDetailsClaimStatus()
 	{
-		By claimStatus=By.xpath("//*[@id='getClaimVerifyDetails']/div/div/div/div[2]/div/table/tbody/tr["+rowIndex+"]/td[5]/label");
+		By claimStatus=By.xpath("//*[@id='getClaimVerifyDetails']/div/div/div/div[2]/div/table/tbody/tr[1]/td[5]/label");
 		WaitVisibliltyOfLocated(claimStatus);
 		return driver.findElement(claimStatus).getText();
 	}
@@ -2503,7 +2545,7 @@ public class OutboundTelecallingPage extends BasePage {
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
-			e.printStackTrace();
+			
 		}
 		click(driver.findElement(By.xpath("//*[@id=\"getClaimVerifyDetails\"]/div/div/div/div[2]/div/table/tbody/tr["+rowIndex+"]/td[6]/button")));
 		
@@ -2548,8 +2590,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyClaimVerificationSuccessPopupDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(claimVerificationSuccessPopup);
+		
 		try {
+			waitVisibilityOf(claimVerificationSuccessPopup);
 			displayStatus = claimVerificationSuccessPopup.isDisplayed();
 		} catch (Exception e) {
 			displayStatus = false;
@@ -2576,8 +2619,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyInfluencerVerificationMenuDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(influencerVerificationMenu);
+		
 		try {
+			waitVisibilityOf(influencerVerificationMenu);
 			displayStatus = influencerVerificationMenu.isDisplayed();
 		} catch (Exception e) {
 			displayStatus = false;
@@ -2594,8 +2638,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyInfluencerVerificationMenuLabelDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(influencerVerificationMenuLabel);
+		
 		try {
+			waitVisibilityOf(influencerVerificationMenuLabel);
 			displayStatus = influencerVerificationMenuLabel.isDisplayed();
 		} catch (Exception e) {
 			displayStatus = false;
@@ -2649,8 +2694,9 @@ public class OutboundTelecallingPage extends BasePage {
 	public boolean verifyIinfluencerVerificationMenuConstructionBussFieldWarningMsgDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf(influencerVerificationMenuYearsInBussinessFieldWarningMsg);
+		
 		try {
+			waitVisibilityOf(influencerVerificationMenuYearsInBussinessFieldWarningMsg);
 			displayStatus = influencerVerificationMenuYearsInBussinessFieldWarningMsg.isDisplayed();
 		} catch (Exception e) {
 			displayStatus = false;
@@ -2849,8 +2895,9 @@ public class OutboundTelecallingPage extends BasePage {
 	 public boolean verifyInfluencerVerificationSuccessPopUpDisplay()
 		{
 			boolean displayStatus = false;
-			waitVisibilityOf(influencerVerificationSuccessPopUp);
+			
 			try {
+				waitVisibilityOf(influencerVerificationSuccessPopUp);
 				displayStatus = influencerVerificationSuccessPopUp.isDisplayed();
 			} catch (Exception e) {
 				displayStatus = false;
@@ -2867,8 +2914,9 @@ public class OutboundTelecallingPage extends BasePage {
 	 public boolean verifyInfluencerVerificationTaskNoPopUpDisplay()
 		{
 			boolean displayStatus = false;
-			waitVisibilityOf(telePageTaskNo);
+			
 			try {
+				waitVisibilityOf(telePageTaskNo);
 				displayStatus = telePageTaskNo.isDisplayed();
 			} catch (Exception e) {
 				displayStatus = false;

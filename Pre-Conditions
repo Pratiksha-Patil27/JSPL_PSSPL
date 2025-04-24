@@ -1,0 +1,18 @@
+1.Call Me Task -->
+      -Schedule Task Count -10
+      -Add Redemption Points to each Influencer.
+      -Add Redemption data in Resource file [Code & Qty].
+      -Add Customer Claim Details In Resource File [eg. name, Inv no. date ].
+      -Add Claim Products In Resource file.
+      
+      
+2.Claim Verification Task -->
+      -Schedule Task Count -10
+      -Add 2 Claim Manually for different influencer in that claim add more than 5 products. 
+     
+      
+4.Influencer Verification Task -->
+      -Schedule Task Count -11
+      -Add Influencer Verification data In Resource File.
+     
+             

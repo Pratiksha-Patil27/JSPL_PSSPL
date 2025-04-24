@@ -26,9 +26,10 @@ public class DashboardPage extends BasePage{
 	public boolean verifySuccessfullyLandingOnDashboard()
 	{
 		boolean displayStatus=false;
-		waitVisibilityOf(siderMenu);
+		
 		try
 		{
+			waitVisibilityOf(siderMenu);
 			displayStatus= siderMenu.isDisplayed();
 		}catch(Throwable e)
 		{

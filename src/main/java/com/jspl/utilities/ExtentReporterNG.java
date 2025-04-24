@@ -13,7 +13,7 @@ public class ExtentReporterNG {
 				//Give Title name
 				reporter.config().setDocumentTitle("JSPL");
 				//Give report name
-				reporter.config().setReportName("JSPL OutBound Task");
+				reporter.config().setReportName("JSPL Report");
 		      //Creat object ExtentReports class - it a main class- Its Responsible to drive all reporting test execution
 				ExtentReports extent =new ExtentReports();
 		        extent = new ExtentReports();

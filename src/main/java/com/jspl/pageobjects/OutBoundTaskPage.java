@@ -124,8 +124,9 @@ public class OutBoundTaskPage extends BasePage {
 	public boolean verifyOutboundPageNoRecordsLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf( outboundTaskPageNoRecordsLable);
+		
 		try {
+			waitVisibilityOf( outboundTaskPageNoRecordsLable);
 			displayStatus =  outboundTaskPageNoRecordsLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -148,8 +149,9 @@ public class OutBoundTaskPage extends BasePage {
 	public boolean verifyOutboundPageTaskAcivityLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf( outboundTaskPageTaskActivityLable);
+		
 		try {
+			waitVisibilityOf( outboundTaskPageTaskActivityLable);
 			displayStatus =  outboundTaskPageTaskActivityLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -172,8 +174,9 @@ public class OutBoundTaskPage extends BasePage {
 	public boolean verifyOutbundTaskPageDateFilterLableDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf( dateFilterLable);
+		
 		try {
+			waitVisibilityOf( dateFilterLable);
 			displayStatus =  dateFilterLable.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;

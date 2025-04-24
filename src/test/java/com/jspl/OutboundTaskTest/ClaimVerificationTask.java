@@ -1074,7 +1074,7 @@ public void claimTaskVerifyStatusOfClaimVerification(TaskTypeManager manager) th
 		SoftAssert softAssert = new SoftAssert();
 		outboundPage = new OutBoundTaskPage(driver);
 		telePage = new OutboundTelecallingPage(driver);
-		String actualClaimStatus=telePage.getClaimVefDetailsClaimStatus(i);
+		String actualClaimStatus=telePage.getClaimVefDetailsClaimStatus();
 		System.out.println("actualClaimStatus : "+actualClaimStatus);
 		softAssert.assertEquals(actualClaimStatus, "Pending",
 				" Claim Verification Status should be Pending.");
@@ -1805,52 +1805,6 @@ public void claimTaskVerifySingleClaimInMultipleWaysBySubmitBtn(TaskTypeManager 
 
 		}
 	 		
-		
-	
-
-        @DataProvider(name = "productData")
-    	public Object[][] productData() {
-    		// call method to read & enter json data
-    		Object[][] dataArray = readJsonData(
-    				System.getProperty("user.dir") + "\\src\\test\\resource\\com\\jspl\\jsondata\\ClaimProducts.json");
-
-    		return dataArray;
-    	};
-
-    	@DataProvider(name = "customerData")
-    	public Object[][] customerDetails() {
-
-    		// call method to read & enter json data
-    		Object[][] dataArray = readJsonData(System.getProperty("user.dir")
-    				+ "\\src\\test\\resource\\com\\jspl\\jsondata\\customerClaimDetails.json");
-    		
-    		return dataArray;
-
-
-    	};
-    	
-    	@DataProvider(name = "redemptionData")
-    	public Object[][] redemptionDetails() {
-
-    		// call method to read & enter json data
-    		Object[][] dataArray = readJsonData(System.getProperty("user.dir")+"\\src\\test\\resource\\com\\jspl\\jsondata\\RedemptionData.json");
-    		return dataArray;
-
-
-    	};
-
-	
-	 @DataProvider(name = "claimVerificationData")
-     public Object[][] claimVerificationDetails() {
-
-	// call method to read & enter json data
-	Object[][] dataArray = readJsonData(System.getProperty("user.dir")
-			+ "\\src\\test\\resource\\com\\jspl\\jsondata\\ClaimVerificationDetails.json");
-	return dataArray;
-
-
-};
-
 
 
 }

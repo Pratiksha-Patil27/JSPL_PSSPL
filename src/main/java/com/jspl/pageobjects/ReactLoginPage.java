@@ -62,8 +62,9 @@ public class ReactLoginPage extends BasePage {
 	public boolean verifyWarningMsgForInvalidUsernamePasswordDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf( warningMsgForInvalidUserNamePassword);
+		
 		try {
+			waitVisibilityOf( warningMsgForInvalidUserNamePassword);
 			displayStatus =  warningMsgForInvalidUserNamePassword.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;
@@ -74,8 +75,9 @@ public class ReactLoginPage extends BasePage {
 	public boolean verifyWarningMsgForBlankUsernamePasswordDisplay()
 	{
 		boolean displayStatus = false;
-		waitVisibilityOf( warningMsgForBlankUserNamePassword);
+		
 		try {
+			waitVisibilityOf( warningMsgForBlankUserNamePassword);
 			displayStatus =  warningMsgForBlankUserNamePassword.isDisplayed();
 		} catch (Throwable e) {
 			displayStatus = false;

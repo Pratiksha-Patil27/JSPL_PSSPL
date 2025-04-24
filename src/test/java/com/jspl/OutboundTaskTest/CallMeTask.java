@@ -315,7 +315,6 @@ public class CallMeTask extends OutboundTaskBaseClass{
 			verifyCallClaimTotalPoints(manager);
 		}
 		
-	
 		if (!TestCaseTracker.isExecuted("callSubmitClaim")) {
 			callSubmitClaim(manager);
 		}
@@ -412,9 +411,7 @@ public class CallMeTask extends OutboundTaskBaseClass{
 		
 		if (!TestCaseTracker.isExecuted("callMeVerifyRedeemablePointsOfPointsMenu")) {
 			callMeVerifyRedeemablePointsOfPointsMenu(manager);
-		}
-		
-		
+		}	
 		
 		if (!TestCaseTracker.isExecuted("callMeRedial")) {
 			callMeRedial(manager);
@@ -1330,7 +1327,13 @@ public class CallMeTask extends OutboundTaskBaseClass{
 		telePage.enterEscalationRemark("Escalation Added");
 		telePage.clickOnAddEscalationMenuSubmitBtn();
 		softAssert.assertTrue(telePage.verifyAddEscalationSuccessPopUpDisplay(),"Escalation Not Getting Submit");
+		try
+		{
 		telePage.clickOnAddEscalationSuccessPopUpOkBtn();
+		}catch(Exception e)
+		{
+			 telePage.clickOnAddEscalationMenuCrossIcon();
+		}
 	    softAssert.assertAll();
         });	
 		TestCaseTracker.markAsExecuted("callAddEscalation");
@@ -1607,7 +1610,7 @@ public class CallMeTask extends OutboundTaskBaseClass{
         //Get Count of rows
 		int totalProductCount=telePage.getCountOfTotalRowsOnAddClaimPage();
 		System.out.println("totalProductCount : "+ totalProductCount);
-		for(int i=1; i<totalProductCount; i++)
+		for(int i=1; i<=totalProductCount; i++)
 		{
 			int points=telePage.getPointsValueOnAddClaim(i);
 			System.out.println("Claim Points :" + points);
@@ -1646,13 +1649,24 @@ public class CallMeTask extends OutboundTaskBaseClass{
 		SoftAssert softAssert = new SoftAssert();
 		telePage = new OutboundTelecallingPage(driver);
 		telePage.clickOnAddClaimSubmitBtn();
+		try
+		{
 		generatedClaimID =telePage.getClaimIDOfAddedClaim();
 		System.out.println("generatedClaimID :"+ generatedClaimID);
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 		softAssert.assertTrue(telePage.verifyAddedClaimSuccessDialogBoxDisplay(),"Test Failed : Claim Not getting Submit");
+		try
+		{
 		telePage.clickOnAddClaimSuccessDialogOkBtn();
+		}catch(Exception e)
+		{
+			telePage.clickOnAddClaimCrossIcon();
+		}
 		softAssert.assertAll();
         });
-        telePage.clickOnAddClaimCrossIcon();
 		TestCaseTracker.markAsExecuted("callSubmitClaim");
 
 	}
@@ -1917,9 +1931,15 @@ public class CallMeTask extends OutboundTaskBaseClass{
 		telePage.clickOnAddRedemptionSubmitBtn();
        softAssert.assertTrue(telePage.verifyAddRedemptionSuccessPopUpDisplay(),"Redemption Not getting submit.");
         softAssert.assertAll();
-        telePage.clickOnAddRedemptionSuccessPopUpOkBtn();
+        
         });	
-        telePage.clickOnAddClaimCrossIcon();
+        try
+        {
+        telePage.clickOnAddRedemptionSuccessPopUpOkBtn();
+        }catch(Exception e)
+        {
+        	telePage.clickOnAddRedemptionCrossIcon();
+        }
         TestCaseTracker.markAsExecuted("callSubmitRedemption");
 		
 		
