@@ -1482,12 +1482,9 @@ public class OutboundTelecallingPage extends BasePage {
 	
 	public void clickOnAddClaimSuccessDialogOkBtn()
 	{
-		try
-		{
+		
 		click(addClaimSuccsessDialogOkBtn);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		
 	}
 	
 	
